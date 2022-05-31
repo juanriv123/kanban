@@ -1,0 +1,24 @@
+<h1>Agregar Tarea:</h1>
+<input type="text" required [(ngModel)]="tareasService.tareaNueva">
+<button (click)="tareasService.agregarTarea()">agregar tarea</button>
+
+<div class="grid-columna">
+  <div class="tarea-pendiente">
+    <p class="p-tarea-pendiente">Tarea pendiente</p>
+    <ul>
+      <li *ngFor="let tarea of tareasService.tareas; index as i">
+      <p>{{tarea}}</p>
+      <button (click)="tareasService.borrartarea(i)">borrar</button>
+      <button (click)="tareasService.cambiar(i)">modificar</button>
+      </li>
+    </ul>
+  </div>
+  <div class="tarea-proceso">
+    <p class="p-tarea-proceso">Tarea en proceso</p>
+  </div>
+  <div class="tarea-terminada">
+    <p class="p-tarea-terminada">Tarea terminada</p>
+  </div>
+</div>
+
+<!-- el cambiar de estado lo voy a hacer con el drag and drop -->

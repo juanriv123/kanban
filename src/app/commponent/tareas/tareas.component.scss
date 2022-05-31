@@ -1,0 +1,41 @@
+:root{
+    --tamaño-- : 30vw;
+  }
+  
+  .grid-columna{
+    display: grid;
+    grid-template-columns: 1fr  1fr 1fr ;
+    grid-gap: 5px; 
+    margin: 5px;
+  }
+  
+  .tarea-pendiente{
+    background-color:  rgb(253, 255, 141);
+    width: var(--tamaño--);
+    height: 50vh;
+  }
+  .tarea-proceso{
+    background-color:rgb(255, 211, 141); 
+    width: var(--tamaño--);
+  }
+  .tarea-terminada{
+    background-color: rgb(255, 160, 141);
+    width: var(--tamaño--);
+  }
+  
+  p{
+    text-align: center;
+    width: var(--tamaño--);
+    margin: 0;
+  }
+  
+  .p-tarea-pendiente{
+    background-color: rgb(231, 233, 133);
+  }
+  .p-tarea-proceso{
+    background-color: rgb(224, 187, 127);
+  }
+  .p-tarea-terminada{
+    background-color: rgb(211, 135, 120);
+  }
+  
